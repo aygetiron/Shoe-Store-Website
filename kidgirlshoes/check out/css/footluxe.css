@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400&display=swap');
+
+:root{
+--lg-font: 'Kaisei Tokumin', serif;
+--sm-font: 'Poppins', sans-serif;
+--crimson: #dc143c;
+}
+body{
+    font-family: var(--sm-font);
+}
+.bg-primary{
+    background-color: var(--crimson)!important ;
+}
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--crimson);
+    color:#fff;
+    border-color: var(--crimson);
+}
+.text-primary{
+    color: var(--crimson)!important;
+}
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand  span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--crimson)!important;
+}
+.navbar-nav > li > a:hover,
+.dropdown-item:hover {
+  color: var(--crimson);
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+  
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--crimson);
+    left: -20px;
+}
+.active-filter-btn{
+    background-color: var(--crimson)!important;
+    color: #fff!important;
+    border-color: var(--crimson);
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50px;
+}
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    transform: scale(1.2);
+}
+.about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+.newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+.newsletter p{
+    max-width: 600px;
+}
+.newsletter .input-group{
+    max-width: 500px;
+}
+.newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--crimson);
+    color: #fff;
+    border-color: var(--crimson);
+}
+#newsletter .btn:hover{
+background-color: #000;
+border-color: #000;
+}
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+footer a{
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--crimson)!important;
+}
+.arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+
+    }
+}
