@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootLuxe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "css/main.css">
+</head>
+<body>
+    
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white px-2 py-2">
+        <div class = "container">
+        <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+            <img src= "images/logo.jpg" width="30" height="24" class="d-inline-block align-text-top">
+            <span class = "text-uppercase fw-lighter ms-2">FootLuxe</span>
+            </a>
+
+        <div class = "order-lg-2 nav-btns">
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-search"></i>
+            </button>
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-shopping-cart"></i>
+            </button>
+            <button type = "button" class = "btn position-relative">
+                <a href = "account.html" class = "fa fa-user"></a>
+            </button>
+        </div>
+
+        <button class = "navbar-toggler border-0" type ="button" data-bs-toggle ="collapse" data-bs-target ="#navMenu">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+
+        <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                  <a class = "nav-link text-uppercase text-dark" href = "#header">Home</a>
+                </li>
+                <li class="nav-item dropdown px-2 py-2 border-0">
+                    <a class="nav-link dropdown-toggle text-uppercase text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Category
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="account.html">Men</a></li>
+                      <li><a class="dropdown-item" href="account.html">Women</a></li>
+                      <li><a class="dropdown-item" href="account.html">Kids Boy</a></li>
+                      <li><a class="dropdown-item" href="account.html">Kids Girl</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown px-2 py-2 border-0">
+                    <a class="nav-link dropdown-toggle text-uppercase text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Collection
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#popular">Popular</a></li>
+                      <li><a class="dropdown-item" href="#special">Specials</a></li>
+                    </ul>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "#about">About</a>
+                  </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> 
+
+  
+<section id = "collection" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center">
+            <h2 class = "position-relative d-inline-block">New Collection</h2>
+        </div>
+
+        <div class = "row g-0">
+            <div class = "d-flex flex-wrap justify-content-center mt-5  filter-button-group">
+                <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Top Selling</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Featured</button>
+                <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">New Arrival</button>
+            </div>
+            
+            <div class = "collection-list mt-4 row gx-0 gy-3">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        <img src = "images/menadult1.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">casual shoes male running sports shoes pu mesh breathable men sneakers for men</p>
+                        <span class = "fw-bold">₱999</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        <img src = "images/womenadult2.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">high top lace up thick bottom women's sneaker round toe anti-slip light weight shoes women</p>
+                        <span class = "fw-bold">₱1,499</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class = "collection-img position-relative">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        <img src = "images/womenadult3.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">fashionable casual platform sneakers for women and ladies breathable mesh walking flat sport shoes</p>
+                        <span class = "fw-bold">₱1,399</span>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        <img src = "images/menadult4.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">custom air cushion fashion high top basketball shoes professional mens basketball sneakers</p>
+                        <span class = "fw-bold">₱1,199</span>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        <img src = "images/womenadult1.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">shoes women new casual shoes breathable lightweight shoes women sneakers</p>
+                        <span class = "fw-bold">₱799</span>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class = "collection-img position-relative">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        <img src = "images/menadult5.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">men sneaker shoes leather summer trend casual running shoes</p>
+                        <span class = "fw-bold">₱1,199</span>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        <img src = "images/womenadult4.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">fashion casual women's sports shoes large young women's walking shoes</p>
+                        <span class = "fw-bold">₱699</span>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Sale</span>
+                        <img src = "images/menadult7.jpg" class = "w-100">
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">men's cushioning non-slip wearable lightwieght basketball shoes</p>
+                        <span class = "fw-bold">₱1,599</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id = "special" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center py-5">
+        <h2 class = "position-relative d-inline-block">Special Selection</h2>
+       </div>
+
+    <div class = "special-list row g-0">
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "special-img position-relative overflow-hidden">
+            <img src = "images/womenadult5.jpg" class = "w-100">
+            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class = "fas fa-heart"></i>
+            </span>
+        </div>
+        <div class = "text-center">
+            <p class = "text-capitalize mt-3 mb-1">mujer ladies sneakers rubber women shoes canvas trendy shoes cleats</p>
+            <span class = "fw-bold d-block">₱899</span>
+            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+        </div>
+      </div>
+      <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "special-img position-relative overflow-hidden">
+            <img src = "images/menadult3.jpg" class = "w-100">
+            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class = "fas fa-heart"></i>
+            </span>
+        </div>
+        <div class = "text-center">
+            <p class = "text-capitalize mt-3 mb-1">low moq men breathable fish scale professional ahtletic basketball shoes</p>
+            <span class = "fw-bold d-block">₱1,199</span>
+            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+        </div>
+      </div>
+      <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "special-img position-relative overflow-hidden">
+            <img src = "images/womenadult6.jpg" class = "w-100">
+            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class = "fas fa-heart"></i>
+            </span>
+        </div>
+        <div class = "text-center">
+            <p class = "text-capitalize mt-3 mb-1">chunky sneakers women round toe lace lady casual wedges shoes</p>
+            <span class = "fw-bold d-block">₱999</span>
+            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+        </div>
+      </div>
+      <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "special-img position-relative overflow-hidden">
+            <img src = "images/menadult9.jpg" class = "w-100">
+            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class = "fas fa-heart"></i>
+            </span>
+        </div>
+        <div class = "text-center">
+            <p class = "text-capitalize mt-3 mb-1">men shoes spring size sports shoes running shoes casual men's shoes</p>
+            <span class = "fw-bold d-block">₱1,299</span>
+            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+        </div>
+      </div>
+      <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "special-img position-relative overflow-hidden">
+            <img src = "images/womenadult8.jpg" class = "w-100">
+            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class = "fas fa-heart"></i>
+            </span>
+        </div>
+        <div class = "text-center">
+            <p class = "text-capitalize mt-3 mb-1">luxury brand canvas leather shoes women fashion chunky sneakers</p>
+            <span class = "fw-bold d-block">₱3,999</span>
+            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+        </div>
+      </div>
+      <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "special-img position-relative overflow-hidden">
+            <img src = "images/menadult6.jpg" class = "w-100">
+            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class = "fas fa-heart"></i>
+            </span>
+        </div>
+        <div class = "text-center">
+            <p class = "text-capitalize mt-3 mb-1">men trend fashion lifestyle design high top sports shoes men sneaker</p>
+            <span class = "fw-bold d-block">₱5,499</span>
+            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+        </div>
+      </div>
+      <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "special-img position-relative overflow-hidden">
+            <img src = "images/menadult10.jpg" class = "w-100">
+            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class = "fas fa-heart"></i>
+            </span>
+        </div>
+        <div class = "text-center">
+            <p class = "text-capitalize mt-3 mb-1">new summer fashion men's sports shoes trending men shoes</p>
+            <span class = "fw-bold d-block">₱599</span>
+            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+        </div>
+      </div>
+      <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class = "special-img position-relative overflow-hidden">
+            <img src = "images/womenadult9.jpg" class = "w-100">
+            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                <i class = "fas fa-heart"></i>
+            </span>
+        </div>
+        <div class = "text-center">
+            <p class = "text-capitalize mt-3 mb-1">fashion casual women sport shoes women young walking shoes</p>
+            <span class = "fw-bold d-block">₱899</span>
+            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+ </div>
+</section>
+
+
+<section id = "offers" class = "py-5">
+    <div class = "container">
+        <div class = "row d-flex align-items-center text-center justify-content-center justify-content-lg-start">
+            <div class = "offers-content">
+                <span class = "text-dark">Discount up To 50%</span>
+                <h2 class = "mt-2 mb-4 text-white">Grand Sale Offer!</h2>
+                <a href = "account.html" class = "btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id = "about" class = "py-5">
+<div class = "container">
+     <div class = "row gy-lg-5 align-items-center">
+        <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+            <div class = "title pt-3 pb-5">
+                 <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+            </div>
+           <p class = "">Thanks for visiting our online shoe store! We are a group of shoe aficionados that are committed to giving our consumers the greatest buying experience possible. Our goal is to provide a large selection of premium shoes at affordable rates, and we make every effort to make the online buying experience as simple and convenient as we can.</p><p>We appreciate you shopping at our online shoe store! We are a bunch of shoe enthusiasts who are dedicated to providing our customers with the best shopping experience. Our mission is to offer a wide range of high-quality shoes at competitive prices, and we work hard to make the online purchasing process as easy and convenient as we can.</p></p>
+         </div>
+        <div class = "col-lg-6 order-lg-0">
+            <img src = "images/about.jpg" alt = "" class = "img-fluid">
+        </div>
+     </div>
+</div>
+</section>
+
+
+<section id = "popular" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center py-5">
+            <h2 class = "position-relative d-inline-block ms-4">Popular</h2>
+            </div>
+    
+        <div class = "row">
+            <div class = "col-md-6 col-lg-4 row g-3">
+                <h3 class = "fs-5">Top Rated</h3>
+                <div class = "d-flex align-items-start justify-content-start">
+                <img src = "images/boy1.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                <div>
+                  <p class = "mb-0">Baby Synthetic Casual School Sneaker Kids Boys NK Shoes </p>
+                    <span>₱699</span>
+                </div>
+            </div>
+            <div class = "d-flex align-items-start justify-content-start">
+                <img src = "images/boy2.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                <div>
+                  <p class = "mb-0">Children Spring Orange Kid's Light Weight Casual Cushion Non Slip Chunky for Boys</p>
+                    <span>₱999</span>
+                </div>
+            </div>
+            <div class = "d-flex align-items-start justify-content-start">
+                <img src = "images/girl1.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                <div>
+                  <p class = "mb-0">Fashion Flashing Colorful Led Light Up Roller Skate Shoes For Kids Girl</p>
+                    <span>₱1,199</span>
+                </div>
+            </div>
+         </div>
+
+         <div class = "col-md-6 col-lg-4 row g-3">
+                <h3 class = "fs-5">Best Selling</h3>
+                <div class = "d-flex align-items-start justify-content-start">
+                <img src = "images/girl2.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                <div>
+                  <p class = "mb-0">Best Selling Colorful Boys running shoes back to school sneakers</p>
+                    <span>₱799</span>
+                </div>
+            </div>
+            <div class = "d-flex align-items-start justify-content-start">
+                <img src = "images/menadult2.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                <div>
+                  <p class = "mb-0">Breathable shock absorption running sneaker casual campus shoes men</p>
+                    <span>₱1,299</span>
+                </div>
+            </div>
+            <div class = "d-flex align-items-start justify-content-start">
+                <img src = "images/womenadult7.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                <div>
+                  <p class = "mb-0">Sneaker women adult fashion best selling shoes casual sport shoes</p>
+                    <span>₱2,599</span>
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-6 col-lg-4 row g-3">
+            <h3 class = "fs-5">On Sale</h3>
+            <div class = "d-flex align-items-start justify-content-start">
+            <img src = "images/girl3.jpg" alt = "" class = "img-fluid pe-3 w-25">
+            <div>
+              <p class = "mb-0">Girls sport shoes children leather sneakers fashion casual infant soft shoes</p>
+                <span>₱499</span>
+            </div>
+        </div>
+        <div class = "d-flex align-items-start justify-content-start">
+            <img src = "images/boy3.jpg" alt = "" class = "img-fluid pe-3 w-25">
+            <div>
+              <p class = "mb-0">Children casual shoes high quality soft comportable kids sneakers for boys</p>
+                <span>₱899</span>
+            </div>
+        </div>
+        <div class = "d-flex align-items-start justify-content-start">
+            <img src = "images/girl4.jpg" alt = "" class = "img-fluid pe-3 w-25">
+            <div>
+              <p class = "mb-0">Girls sneakers breathable mesh walking lace up girls casual sport shoes kids</p>
+                <span>₱599</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id = "newsletter" class = "py-5">
+    <div class = "container">
+        <div class = "d-flex flex-column align-items-center justify-content-center">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+            </div>
+
+            <p class = "text-center text-muted">Become a member of our newsletter today to receive updates on the newest shoe trends and special deals! You'll be the first to learn about our newest products, limited-edition releases, and exclusive sales as a valued subscriber. Also, you'll get pointers and suggestions on how to dress your shoes and extend their lifespan. Don't pass up the opportunity to join our community of shoe enthusiasts! Get registered right away and be ready to enhance your sneaker game.</p>
+            <div class = "input-group mb-3 mt-3">
+                <input type = "text" class = "form-control" placeholder = "Enter Your Email ...">
+                <button class = "btn btn-primary" type = "submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class = "bg-dark py-5">
+    <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <a class="text-uppercase text-decoration-none brand text-white" href="index.html">
+              <img src="images/logo.jpg" width="30" height="30" class="d-inline-block align-text-top">
+              <span class = "text-uppercase fs-3"><b>FootLuxe</b></span>
+            </a>
+            <p class="text-white mt-1">High-quality shoes that fit your demands and personal style are available at our online shoe store. We provide a wide selection of shoes from leading manufacturers that are made from premium materials with meticulous attention to detail to ensure longevity. We provide a variety of sizes and widths in our assortment of shoes for men, women, and children in both traditional and contemporary styles.</p>
+          </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light">Links</h5>
+                <ul class = "my-3">
+                    <li class = "my-3">
+                        <a href = "#header" class = "text-white text-decoration-none">
+                            <i class = ""></i>Home
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#collection" class = "text-white text-decoration-none">
+                            <i class = ""></i>Collection
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#about" class = "text-white text-decoration-none">
+                            <i class = ""></i>About us
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#popular" class = "text-white text-decoration-none">
+                            <i class =  ""></i>Popular
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#special" class = "text-white text-decoration-none">
+                            <i class =  ""></i>Specials
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Contact Us</h5>
+                <div class = "d-flex justify-content-start align-items-start my-2">
+                    <span class = "me-3">
+                        <i class = "fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        Rizal St, Iloilo City Proper, Iloilo City, 5000 Iloilo
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2">
+                    <span class = "me-3">
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span class = "fw-light">
+                        yourfootluxe@gmail.com
+                    </span>
+                </div>
+            </div>
+    
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Follow Us</h5>
+                <div">
+                     <ul class = "list-unstyled d-flex">
+                        <li>
+                            <a href = "https://m.facebook.com/p/100065261930201/" class = "text-white text-decoration-none fs-4 me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://instagram.com/footluxe.ph?igshid=ZDdkNTZiNTM=" class = "text-white text-decoration-none fs-4 me-4">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://mobile.twitter.com/FootLuxe148531/photo" class = "text-white text-decoration-none fs-4 me-4">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.tiktok.com/@footluxe.ph" class = "text-white text-decoration-none fs-4 me-4">
+                                <i class = "fab fa-tiktok"></i>
+                            </a>
+                        </li>
+                     </ul>
+                </div>
+                <p class="text-white mt-3 text-center">&copy; 2023 FootLuxe. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+
+<a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+     <script src="js/jquery-3.6.4.js"></script>
+     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
